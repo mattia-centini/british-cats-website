@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Comfortaa", cursive;
+}
+
+.wrapper {
+  position: relative;
+  top: 60px;
+  height: 100vh;
+  display: block;
+}
+/* main image */
+.main-landing {
+  height: 100vh;
+}
+.landing-img {
+  height: 400px;
+  width: 100vw;
+  background: url(img/landing.jpeg);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+
+  /* box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.6); */
+}
+
+/* landing flyer */
+.landing-flyer {
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(238, 130, 238);
+}
+
+.flyer-text-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  font-size: 32px;
+}
+
+/* paws logo */
+.flyer-text-top > span > i {
+  color: #ffffff;
+  font-size: 64px;
+}
+/* samo szczescie */
+.flyer-text-top > p {
+  font-family: "Parisienne", cursive;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.flyer-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 70px;
+}
+
+.flyer-text-bottom p {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: justify;
+  font-weight: 100;
+}
+
+.flyer-text-bottom button {
+  color: #ffffff;
+  font-size: 1.7rem;
+  padding: 16px 32px;
+  margin: 20px;
+  border: none;
+  border-radius: 1px;
+  background-color: rgb(169, 40, 233);
+  opacity: 1;
+  transition: 0.6s;
+  outline: none;
+}
+.flyer-text-bottom button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flyer-text-bottom button:hover {
+  opacity: 0.6;
+}
+
+/* ABOUT US SECTION */
+.about-us {
+  height: 80vh;
+  position: relative;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-us-text p {
+  color: #1eb2df;
+  width: 80%;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  word-wrap: initial;
+  font-size: 20px;
+}
+
+.footsteps .footsteps-img {
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+
+.about-us > .cat-repeat {
+  height: 80px;
+  width: 110%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-repeat: repeat-x;
+  transform: scaleX(-1);
+  background-image: url(./img/noun_Cat_3353615.jpg);
+  background-size: contain;
+}
+
+/* ribbon */
+
+#ribbon {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  padding: 0.34em 1em;
+  margin: 0;
+  margin-top: 5%;
+  position: relative;
+  color: #ffffff;
+  font: 32px "Comfortaa", cursive;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.4);
+  background: -webkit-linear-gradient(top, #1eb2df, #17a7d2);
+  display: inline-block;
+}
+
+#ribbon:before,
+#ribbon:after {
+  content: "";
+  width: 0.2em;
+  bottom: -0.5em;
+  position: absolute;
+  display: block;
+  border: 0.9em solid #1eb2df;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+  z-index: -2;
+}
+
+#ribbon:before {
+  left: -1.35em;
+  border-right-width: 0.75em;
+  border-left-color: transparent;
+}
+
+#ribbon:after {
+  right: -1.35em;
+  border-left-width: 0.75em;
+  border-right-color: transparent;
+}
+
+#content:before,
+#content:after {
+  content: "";
+  bottom: -0.5em;
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #0675b3 transparent transparent transparent;
+  z-index: -1;
+}
+
+#content:before {
+  left: 0;
+  border-width: 0.5em 0 0 0.5em;
+}
+
+#content:after {
+  right: 0;
+  border-width: 0.5em 0.5em 0 0;
+}
+
+/* CARD - CATS SECTION */
+
+.card {
+  position: relative;
+  width: 90%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  margin-bottom: 20px;
+}
+
+.card > img {
+  width: 100%;
+  height: 70%;
+}
+
+.container > h4 {
+  padding: 10px 16px;
+}
+
+.container > h4 > span {
+  display: inline-block;
+  font-size: 32px;
+}
+
+.container > p {
+  padding: 10px 16px;
+}

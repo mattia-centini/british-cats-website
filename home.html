@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Samo Szcęście</title>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div class="lines"></div></div>
+        <div class="menu">
+          <div class="outerOne">
+            <div class="outerTwo">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about-us-section">About</a></li>
+                <li><a href="./Our-cats.html">Our Cats</a></li>
+                <li><a href="#">Kittens</a></li>
+                <li><a href="#contact-us-section">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="logo-wrap">
+          <span><i class="fas fa-cat"></i> </span>
+          <h3>Samo Szczęście</h3>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+      <div class="wrapper">
+        <div class="main-landing">
+          <div class="landing-img"></div>
+          <div class="landing-flyer">
+            <div class="flyer-text-top">
+              <span><i class="fas fa-paw"></i></span>
+              <p>Samo <b>Szczęście</b></p>
+            </div>
+            <div class="flyer-text-bottom">
+              <p>Breeding of <b>British Cats</b></p>
+              <button><a href="#contact-us-section">Reserve Kitten</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section id="about-us-section">
+          <div class="about-us">
+            <div id="ribbon">
+              <span id="content">About Us</span>
+            </div>
+            <div class="about-us-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                atque earum eius at suscipit nemo quam unde, magni cumque ipsam,
+                nam modi! Ipsa debitis similique aliquam quas aspernatur,
+                maiores harum?
+              </p>
+              <br />
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                aut atque minima minus unde dolores quod quidem. Deleniti
+                deserunt, rerum qui dolore necessitatibus harum neque,
+                cupiditate perspiciatis, ipsa error numquam.
+              </p>
+            </div>
+            <div class="cat-repeat">
+              
+            </div>
+          </div>
+        </section>
+        <section id="contact-us-section">
+          <h3>Get In Touch With us</h3>
+          <form action="mail.php" method="POST">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              name="submit"
+              value="SEND"
+              class="form-control submit"
+            />
+          </form>
+        </section>
+        <footer>
+          <div class="footer-wrapper">
+            <div class="logo-footer">
+              <span><i class="fas fa-cat"></i> </span>
+              <h5>Samo Szczęście</h5>
+            </div>
+            <div class="icon-foot-wrapper">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/sam.borkowska"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:mattia.centini@gmail.com"
+                    ><i class="far fa-envelope"></i
+                  ></a>
+                </li>
+                <li><a href="tel:123-456-7890">123-456-7890</a></li>
+              </ul>
+            </div>
+            <div class="bottom-line"></div>
+            <div class="all-rights">
+              <p>&copy;<i>designed by Mattia Centini</i></p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

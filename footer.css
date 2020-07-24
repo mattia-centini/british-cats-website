@@ -1,0 +1,86 @@
+footer {
+  height: 200px;
+  background-color: lightsteelblue;
+}
+
+.footer-wrapper {
+  height: 200px;
+  width: auto;
+  position: relative;
+  top: 0;
+  background-color: rgb(15, 27, 43);
+  color: #ffffff;
+}
+
+.logo-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 50%;
+  height: 100%;
+}
+
+.logo-footer .fas {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.logo-footer h5 {
+  font-family: "Parisienne", cursive;
+  font-size: 32px;
+  margin: 10px;
+}
+
+.icon-foot-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.icon-foot-wrapper ul li {
+  list-style: none;
+  margin: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-foot-wrapper ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.icon-foot-wrapper ul li:nth-child(1),
+.icon-foot-wrapper ul li:nth-child(2) {
+  font-size: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+.icon-foot-wrapper ul li:nth-child(3) {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bottom-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  display: flex;
+  bottom: 20%;
+}
+
+.all-rights {
+  color: #ffffff;
+  position: absolute;
+  height: 5px;
+  font-size: 12px;
+  bottom: 15px;
+  left: 20px;
+}
