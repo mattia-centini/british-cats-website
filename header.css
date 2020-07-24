@@ -168,6 +168,7 @@ html {
 }
 
 .logo-wrap span {
+  visibility: hidden; /* hides cat logo in the header */
   display: flex;
   align-items: center;
   justify-content: center;
