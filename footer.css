@@ -68,6 +68,8 @@ footer {
 }
 
 .bottom-line {
+  /* make display visible in larger screen */
+  display: none;
   position: absolute;
   width: 100%;
   height: 1px;
@@ -77,6 +79,8 @@ footer {
 }
 
 .all-rights {
+  /* make display visible in larger screens */
+  display: none;
   color: #ffffff;
   position: absolute;
   height: 20px;

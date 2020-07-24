@@ -51,7 +51,6 @@ form .submit {
   margin-top: 20px;
 }
 
-form .submit:hover {
+form .submit:active {
   opacity: 0.7;
-  transform: scale(1.2);
 }
