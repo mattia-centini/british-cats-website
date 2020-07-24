@@ -1,5 +1,5 @@
 footer {
-  height: 200px;
+  /* height: 20%; */
   background-color: lightsteelblue;
 }
 
@@ -69,12 +69,12 @@ footer {
 
 .bottom-line {
   /* make display visible in larger screen */
-  visibility: hidden;
+  display: none;
   position: absolute;
   width: 100%;
   height: 1px;
   background-color: #ffffff;
-  display: flex;
+  /* display: flex; */
   bottom: 20%;
 }
 

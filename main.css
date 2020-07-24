@@ -9,7 +9,9 @@
 html {
   font-family: "Comfortaa", cursive;
 }
-
+main {
+  height: 100vh;
+}
 .wrapper {
   position: relative;
   top: 60px;
@@ -160,6 +162,12 @@ html {
   display: inline-block;
 }
 
+/* the ribbon in out cats page */
+.ribbon-wrap {
+  position: relative;
+  top: 10px;
+}
+
 #ribbon:before,
 #ribbon:after {
   content: "";
@@ -209,13 +217,14 @@ html {
 
 .card {
   position: relative;
+  top: 30px;
   width: 90%;
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .card > img {
