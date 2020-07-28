@@ -113,7 +113,8 @@
 }
 
 .menu-wrap .menu > div {
-  background: #d3e1ee;
+  background: rgb(233, 203, 209, 0.9);
+  /* background: #eaeff8; */
   border-radius: 50%;
   width: 200vw;
   height: 200vh;

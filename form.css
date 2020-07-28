@@ -52,6 +52,7 @@ form .submit {
   margin-top: 20px;
 }
 
-form .submit:hover {
+/* :active for mobile, changes colour when clicking on it */
+form .submit:active {
   background-color: #f897ac;
 }
