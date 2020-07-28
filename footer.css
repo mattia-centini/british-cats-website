@@ -13,12 +13,12 @@ footer {
 }
 
 .logo-footer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 50%;
-  height: 100%;
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }
 
 .logo-footer .fas {
@@ -33,15 +33,19 @@ footer {
 }
 
 .icon-foot-wrapper {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 100px;
-  width: 50%;
-  height: 100%;
+  height: 50%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   color: #ffffff;
+  text-align: center;
+}
+
+.icon-foot-wrapper ul {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .icon-foot-wrapper ul li {
@@ -49,24 +53,32 @@ footer {
   margin: 10px;
   text-decoration: none;
   color: inherit;
+  float: left;
+  font-size: 40px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .icon-foot-wrapper ul li a {
   text-decoration: none;
   color: #ffffff;
+  text-align: center;
+  display: block;
+  padding: 16px;
 }
 
-.icon-foot-wrapper ul li:nth-child(1),
+/* .icon-foot-wrapper ul li:nth-child(1),
 .icon-foot-wrapper ul li:nth-child(2) {
   font-size: 40px;
   text-decoration: none;
   color: inherit;
-}
-.icon-foot-wrapper ul li:nth-child(3) {
+} */
+/* .icon-foot-wrapper ul li:nth-child(3) {
   text-decoration: none;
   color: inherit;
-}
+} */
 
+/* bottom line */
 .bottom-line {
   /* make display visible in larger screen */
   display: none;

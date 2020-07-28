@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 80vh;
   position: relative;
-  background-color: thistle;
+  background-color: #bfd0e6;
   justify-content: center;
 }
 
@@ -41,7 +41,8 @@ input {
 }
 
 form .submit {
-  background: #ff5722;
+  /* background: #dba8b3; */
+  background-color: #dba8b3;
   border-color: transparent;
   color: #ffffff;
   font-size: 20px;
@@ -51,6 +52,6 @@ form .submit {
   margin-top: 20px;
 }
 
-form .submit:active {
-  opacity: 0.7;
+form .submit:hover {
+  background-color: #f897ac;
 }

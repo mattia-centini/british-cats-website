@@ -4,11 +4,11 @@
   padding: 0;
 }
 
-html {
+/* html {
   font-family: "Comfortaa", cursive;
   font-weight: 700;
   scroll-behavior: smooth;
-}
+} */
 
 /* styling menu wrap */
 
@@ -21,6 +21,8 @@ html {
   height: 60px;
   background-color: #f0f0f0;
   border-bottom: 2px solid #5b7e79;
+  display: flex;
+  align-items: center;
 }
 
 .menu-wrap .toggler {
@@ -152,32 +154,23 @@ html {
 .logo-wrap {
   width: auto;
   position: absolute;
-  top: 0;
+
   left: 50%;
   transform: translate(-50%);
+  width: 300px;
+  align-items: center;
+
   display: flex;
+  justify-content: space-around;
 }
 
-/* page name */
-.logo-wrap h3 {
+/* Samo Szczęście */
+.logo-wrap > h3 {
+  font-family: "Parisienne", cursive;
   font-size: 32px;
-  margin-top: 15px;
   /* make the text overflow its container*/
   overflow: hidden;
   white-space: nowrap;
-  font-weight: 600;
-}
-
-.logo-wrap span {
-  visibility: hidden; /* hides cat logo in the header */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  padding-bottom: 5px;
-}
-
-.fas {
-  margin-right: 20px;
-  height: 60px;
+  /* font-weight: 600; */
+  padding: 5px;
 }

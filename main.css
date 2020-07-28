@@ -60,10 +60,12 @@ main {
 }
 /* samo szczescie */
 .flyer-text-top > p {
-  font-family: "Parisienne", cursive;
-  font-size: 3rem;
+  font-family: "Comfortaa", cursive;
+  font-size: 2.3rem;
   font-weight: 300;
+  text-align: center;
   color: #ffffff;
+  line-height: 1.6;
 }
 
 .flyer-text-bottom {
@@ -117,7 +119,7 @@ main {
 }
 
 .about-us-text p {
-  color: #1eb2df;
+  color: black;
   width: 80%;
   position: relative;
   top: 80px;
