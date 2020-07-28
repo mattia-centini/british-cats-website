@@ -15,7 +15,7 @@ footer {
 .logo-footer {
   /* position: absolute; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 50%;
   width: 100%;
@@ -23,13 +23,12 @@ footer {
 
 .logo-footer .fas {
   font-size: 40px;
-  margin: 10px;
+  margin-right: 20px;
 }
 
 .logo-footer h5 {
   font-family: "Parisienne", cursive;
   font-size: 32px;
-  margin: 10px;
 }
 
 .icon-foot-wrapper {

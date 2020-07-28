@@ -218,7 +218,7 @@ main {
   border-width: 0.5em 0.5em 0 0;
 }
 
-/* CARD - CATS SECTION */
+/* CARD - CATS PAGE */
 
 .card {
   position: relative;
@@ -248,4 +248,11 @@ main {
 
 .container > p {
   padding: 10px 16px;
+}
+
+/* KITTENS PAGE */
+
+.kittens-page {
+  padding: 15px;
+  height: 80vh;
 }
