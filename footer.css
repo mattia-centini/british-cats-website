@@ -1,6 +1,6 @@
 footer {
   /* height: 20%; */
-  background-color: lightsteelblue;
+  background-color: #f0f0f0;
 }
 
 .footer-wrapper {
@@ -9,7 +9,7 @@ footer {
   position: relative;
   top: 0;
   background-color: rgb(15, 27, 43);
-  color: #ffffff;
+  color: #f0f0f0;
 }
 
 .logo-footer {
@@ -36,7 +36,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  color: #ffffff;
+  color: #f0f0f0;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ footer {
 
 .icon-foot-wrapper ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: inherit;
   text-align: center;
   display: block;
   padding: 16px;

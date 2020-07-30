@@ -21,6 +21,7 @@
 
 form {
   position: absolute;
+
   top: 200px;
   transition: all 4s ease-in-out;
 }
@@ -48,11 +49,18 @@ form .submit {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease;
   margin-top: 20px;
 }
 
 /* :active for mobile, changes colour when clicking on it */
 form .submit:active {
   background-color: #f897ac;
+}
+
+@media (min-width: 685px) {
+  form {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

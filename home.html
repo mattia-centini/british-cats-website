@@ -20,6 +20,9 @@
     <title>Samo Szcęście</title>
   </head>
   <body>
+    <!-- facebook integration -->
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="lvTSL5QB"></script>
     <nav>
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
@@ -45,106 +48,105 @@
     <main>
       <section>
       <div class="wrapper">
-        <div class="main-landing">
-          <div class="landing-img"></div>
-          <div class="landing-flyer">
-            <div class="flyer-text-top">
-              <!-- <span><i class="fas fa-paw"></i></span> -->
-              <p>British Long & Shorthair<b>Cattery</b></p>
+            <div class="main-landing">
+              <div class="landing-img"></div>
+              <div class="landing-flyer">
+                <div class="flyer-text-top">
+                  <!-- <span><i class="fas fa-paw"></i></span> -->
+                  <p>British Long & Shorthair<b>Cattery</b></p>
+                </div>
+                <div class="flyer-text-bottom">
+                  <!-- <p>Breeding of <b>British Cats</b></p> -->
+                  <button><a href="#contact-us-section">Reserve Kitten</a></button>
+                </div>
+              </div>
             </div>
-            <div class="flyer-text-bottom">
-              <!-- <p>Breeding of <b>British Cats</b></p> -->
-              <button><a href="#contact-us-section">Reserve Kitten</a></button>
-            </div>
-          </div>
-        </div>
-      </section>
-        <section id="about-us-section">
-          <div class="about-us">
-            <div id="ribbon">
-              <span id="content">About Us</span>
-            </div>
-            <div class="about-us-text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
-                atque earum eius at suscipit nemo quam unde, magni cumque ipsam,
-                nam modi! Ipsa debitis similique aliquam quas aspernatur,
-                maiores harum?
-              </p>
-              <br />
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-                aut atque minima minus unde dolores quod quidem. Deleniti
-                deserunt, rerum qui dolore necessitatibus harum neque,
-                cupiditate perspiciatis, ipsa error numquam.
-              </p>
-            </div>
-            <!-- <div class="cat-repeat">
-              
-            </div> -->
-          </div>
-        </section>
-        <section id="contact-us-section">
-          <h3>Get In Touch With us</h3>
-          <form action="mail.php" method="POST">
-            <input
-              type="text"
-              name="name"
-              class="form-control"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              name="message"
-              class="form-control"
-              placeholder="Message"
-              rows="4"
-              required
-            ></textarea>
-            <input
-              type="submit"
-              name="submit"
-              value="SEND"
-              class="form-control submit"
-            />
-          </form>
-        </section>
-        <footer>
-          <div class="footer-wrapper">
-            <div class="logo-footer">
-              <span><i class="fas fa-cat"></i> </span>
-              <h5>Samo Szczęście*PL</h5>
-            </div>
-            <div class="icon-foot-wrapper">
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/sam.borkowska"><i class="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:mattia.centini@gmail.com"
-                    ><i class="far fa-envelope"></i
-                  ></a>
-                </li>
-                <li><a href="tel:+48882689869"><i class="fas fa-phone-square-alt"></i></a></li>
-              </ul>
-            </div>
-            <div class="bottom-line"></div>
-            <div class="all-rights">
-              <p>&copy;<i>designed by Mattia Centini</i></p>
-            </div>
-          </div>
-        </footer>
+          </section>
+            <section id="about-us-section">
+              <div class="about-us">
+                <div id="ribbon">
+                  <span id="content">About Us</span>
+                </div>
+                <div class="about-us-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                    atque earum eius at suscipit nemo quam unde, magni cumque ipsam,
+                    nam modi! Ipsa debitis similique aliquam quas aspernatur,
+                    maiores harum?
+                  </p>
+                  <br />
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                    aut atque minima minus unde dolores quod quidem. Deleniti
+                    deserunt, rerum qui dolore necessitatibus harum neque,
+                    cupiditate perspiciatis, ipsa error numquam.
+                  </p>
+                </div>
+                <!-- <div class="cat-repeat">
+                  
+                </div> -->
+              </div>
+            </section>
+            <section id="contact-us-section">
+              <h3>Get In Touch With us</h3>
+              <form action="mail.php" method="POST">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Message"
+                  rows="4"
+                  required
+                ></textarea>
+                <input
+                  type="submit"
+                  name="submit"
+                  value="SEND"
+                  class="form-control submit"
+                />
+              </form>
+            </section>
+            <footer>
+              <div class="footer-wrapper">
+                <div class="logo-footer">
+                  <span><i class="fas fa-cat"></i> </span>
+                  <h5>Samo Szczęście*PL</h5>
+                </div>
+                <div class="icon-foot-wrapper">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/sam.borkowska"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                      <a href="mailto:mattia.centini@gmail.com"
+                        ><i class="far fa-envelope"></i
+                      ></a>
+                    </li>
+                    <li><a href="tel:+48882689869"><i class="fas fa-phone-square-alt"></i></a></li>
+                  </ul>
+                </div>
+                <div class="bottom-line"></div>
+                <div class="all-rights">
+                  <p>&copy;<i>designed by Mattia Centini</i></p>
+                </div>
+              </div>
+            </footer>
       </div>
     </main>
-
     <script src="index.js"></script>
   </body>
 </html>
