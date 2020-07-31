@@ -18,6 +18,28 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
+  let currenIndex = 0;
+  function slideShow() {
+    mainImg.style.background = "url(" + slides[currenIndex].img + ")";
+    mainImg.style.backgroundPosition = "center";
+    mainImg.style.backgroundSize = "90% 90%";
+    mainImg.style.backgroundRepeat = "no-repeat";
+    currenIndex++;
+    if (currenIndex == slides.length) {
+      currenIndex = 0;
+    }
+    if (width > 600) {
+      mainImg.style.backgroundSize = "100%";
+    }
+    if (width > 850) {
+      //stop slideshow over 850px screen
+      return;
+    }
+    setTimeout(slideShow, 3000);
+  }
+
+  slideShow();
+
   //burger menu pop-up
   checkBox.addEventListener("click", () => {
     if (menu.style.visibility === "visible") {
@@ -41,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         outerOne.style.transform = "scale(0)";
         outerOne.style.transitionDuration = `${0.75}s`;
         outerTwo.style.opacity = 0;
+        checkBox.checked = false; //spin back the burger lines
       });
     }
   });
@@ -58,19 +81,4 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     return;
   }
-
-  let currenIndex = 0;
-  function slideShow() {
-    mainImg.style.background = "url(" + slides[currenIndex].img + ")";
-    mainImg.style.backgroundPosition = "center";
-    mainImg.style.backgroundSize = "90% 90%";
-    mainImg.style.backgroundRepeat = "no-repeat";
-    currenIndex++;
-    if (currenIndex == slides.length) {
-      currenIndex = 0;
-    }
-    setTimeout(slideShow, 3000);
-  }
-
-  slideShow();
 });

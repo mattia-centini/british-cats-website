@@ -31,9 +31,13 @@ main {
   background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90% 90%;
+  /* background-size: 90% 90%; */
 
   /* box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.6); */
+}
+
+.large-vp-img {
+  display: none;
 }
 
 /* landing flyer */
@@ -265,11 +269,7 @@ main {
   .landing-img {
     height: 400px;
     width: 100vw;
-    background: url(img/IMG_0098.JPG);
     background-color: #f0f0f0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
 
     /* box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.6); */
   }
@@ -291,11 +291,6 @@ main {
     font-size: 32px;
   }
 
-  /* paws logo */
-  .flyer-text-top > span > i {
-    color: #ffffff;
-    font-size: 64px;
-  }
   /* samo szczescie */
   .flyer-text-top > p {
     font-family: "Comfortaa", cursive;
@@ -313,13 +308,6 @@ main {
     align-items: center;
     position: relative;
     top: 70px;
-  }
-
-  .flyer-text-bottom p {
-    color: #ffffff;
-    font-size: 32px;
-    text-align: justify;
-    font-weight: 100;
   }
 
   .flyer-text-bottom button {
@@ -341,5 +329,104 @@ main {
 
   .flyer-text-bottom button:hover {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: 850px) {
+  /* split the landing image in 2 images */
+  .large-vp-img {
+    display: flex;
+    height: 400px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .landing-img img:nth-child(1) {
+    width: 50%;
+  }
+  .landing-img img:nth-child(2) {
+    width: 50%;
+  }
+}
+
+@media (min-height: 900px) {
+  /* reduce the amount of the flyer and increase picture size */
+  .landing-img {
+    height: 70%;
+  }
+  .landing-flyer {
+    height: 30%;
+  }
+  .large-vp-img {
+    display: flex;
+    height: 700px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .landing-img img:nth-child(1) {
+    width: 50%;
+  }
+  .landing-img img:nth-child(2) {
+    width: 50%;
+  }
+
+  .flyer-text-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    font-size: 32px;
+  }
+
+  .flyer-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+  }
+}
+
+@media (min-width: 1024px), (min-height: 900px) {
+  /* CARD - CATS PAGE */
+  /* put the cards next to each other */
+  .cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+  }
+  .card {
+    position: relative;
+    top: 30px;
+    width: 90%;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    margin-bottom: 50px;
+  }
+
+  .card > img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .container > h4 {
+    padding: 10px 16px;
+  }
+
+  .container > h4 > span {
+    display: inline-block;
+    font-size: 32px;
+  }
+
+  .container > p {
+    padding: 10px 16px;
   }
 }
