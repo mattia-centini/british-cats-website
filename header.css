@@ -79,22 +79,17 @@
   top: 10px;
 }
 
-/* animate the click on checkbox
+/* animate the click on checkbox */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
-} */
+}
 
 /* turn lines into X */
-/* .menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::before,
 .menu-wrap .toggler:checked + .hamburger > div::after {
   top: 0;
   transform: rotate(90deg);
-} */
-
-/* rotate when over when checked */
-/* .menu-wrap .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
-} */
+}
 
 /* show menu */
 /* style the menu */
@@ -154,16 +149,14 @@
 }
 
 /* styling logo */
-
 .logo-wrap {
   width: auto;
   position: absolute;
-
   left: 50%;
   transform: translate(-50%);
-  width: 300px;
+  width: 350px;
   align-items: center;
-  z-index: 2;
+  /* z-index: 2; */
   display: flex;
   justify-content: space-around;
 }
@@ -179,6 +172,7 @@
   padding: 5px;
 }
 
+/* this media querie changes the menu from a pop-up to a fixed trasversal */
 @media (min-width: 720px) {
   .logo-wrap {
     background-color: #f0f0f0;
