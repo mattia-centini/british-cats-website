@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainImg = document.querySelector(".landing-img");
   const width = window.innerWidth;
 
-  //slideshow on homepage
+  //slideshow on homepage on small screen
   const slides = [
     {
       img: "./img/IMG_5908.JPG",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   slideShow();
 
-  //burger menu pop-up
+  //burger menu pop-up on small screen
   checkBox.addEventListener("click", () => {
     if (menu.style.visibility === "visible") {
       menu.style.visibility = "hidden";
